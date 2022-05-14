@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.container-principal{
+    width: 400px;
+    position: absolute;
+    z-index: 99;
+    background-color: #1d282e;
+    color: white;
+    margin: auto;
+    top: 180px;
+    padding: 0 3px 3px;
+    border: solid 1px rgba(255, 255, 255, 0.137);
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    padding: 0px;
+    margin: 0;
+}
+.header-title{
+    margin: 15px;
+}
+.header-menu{
+    display: flex;
+}
+.header-menu .material-symbols-outlined{
+    height: 37px;
+    font-size: 1rem;
+    margin: 0;
+}
+.header-menu .material-symbols-outlined:last-child:hover{
+    background-color: rgb(214, 29, 29);
+}
+.material-symbols-outlined{
+    padding: 10px;
+    margin: 0 10px;
+}
+.material-symbols-outlined:hover{
+    background-color: rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+}
+.header-menu img:first-child{
+    width: 14px;
+}
+.menu-default{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-default .close-hidden{
+    margin-right: -4px;
+    padding: 5px 17px;
+    display: none;
+    align-items: center;    
+}
+.menu-default .close-hidden:hover{
+    background-color: rgb(224, 14, 14);
+}
+.menu-default img{
+    width: 20px;
+    margin: 5px 14px;
+}
+.menu-default .menu-left, .menu-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-left h2{
+    margin-left: 60px;
+    font-size: 1.2rem;
+}
+.menu-left .menu{
+    position: absolute;
+    z-index: 5;
+    left: -10px;
+    display: flex;
+}
+.container-visor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.visor-1, .visor-2{
+    width: 370px;
+    text-align: end;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+.visor-1{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.568);
+    letter-spacing: .3rem;
+}
+.visor-2{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.menu-function{
+    margin: 25px 0;
+}
+.menu-function ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-function ul li{
+    list-style: none;
+    display: flex;
+    font-size: .9rem;
+}
+.menu-function ul li sub{
+    margin-top: 2px;
+}
+.menu-function ul li sup{
+    margin-top: -5px;
+}
+.keyboard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.keyboard div{
+    width: 95px;
+    height: 60px;
+    margin: 1px;
+    transition: all .2s;
+    border:solid 1px transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.keyboard div:hover{
+    background-color: #5e5e5e94;
+    border:solid 1px rgba(255, 255, 255, 0.205);
+}
+.keyboard div img{
+    width: 20px;
+}
+.black{
+    background-color: #000;
+    font-size: 1.3rem;
+}
+.black-opaco{
+    background-color: #11181c;
+}
+.keyboard div sup{
+    margin-top: -12px;
+    font-size: .6rem;
+}
+.keyboard div sub{
+    margin-top: 0px;
+    font-size: .9rem;
+}
+.keyboard .black sup{
+    margin-top: -12px;
+    font-size: .9rem;
+}
+.keyboard .black sub{
+    margin-top: 2px;
+    font-size: 1.3rem;
+}
+/*-- modal --*/
+.modal{
+    width: 300px;
+    height: 580px;
+    position: absolute;
+    top: 45px;
+    left: -300px;
+    z-index: 1;
+    background-color: rgb(26, 25, 25);
+    padding-top: 50px;    
+    transition: all .2s;
+}
+.modal .sobre{
+    display: flex;
+    align-items: center;    
+    padding: 35px 6px;
+}
+.modal .sobre img{
+    width: 20px;
+    margin-right: 15px;
+}
+.modal-container{
+    height: 460px;
+    overflow-y: auto;
+    padding-top: 15px;
+    padding-left: 3px;
+}
+.modal-container::-webkit-scrollbar{
+    background-color: transparent;
+    width: 2px;
+}
+.modal-container::-webkit-scrollbar-thumb{
+    background-color: rgb(126, 122, 122);
+}
+.modal-container h2{
+    margin-left: 10px;
+    font-size: .9rem;
+}
+.modal-container ul{
+    margin: 0;
+    padding: 0;
+}
+.modal-container ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    padding-left: 5px;
+}
+.modal-container ul li:hover{
+    background-color: rgb(99, 99, 99);
+}
+/*
+.modal-container ul li:first-child{
+    border-left: solid 2px rgb(43, 155, 219);
+}
+*/
+.modal-container ul li img{
+    width: 20px;
+}
+.modal-container ul li span{
+    margin-left: 15px;
+    font-size: .9rem;
+}
+.modal-historic-container{
+    width: inherit;
+    height: 385px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    bottom: -385px;
+    background-color:rgb(39, 39, 39);
+    padding-top: 12px;
+    transition: all .4s;
+}
+.modal-historic-container .emputy-value{
+    font-size: 15px;
+}
+.modal-historic{
+    height: 300px;  
+    transition: all .3s;
+    overflow-y: auto;
+}
+.modal-historic::-webkit-scrollbar{
+    background-color: transparent;
+    width: 7px;
+}
+.modal-historic::-webkit-scrollbar-thumb{
+    background-color: rgb(126, 122, 122);
+}
+.historic-calc{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.historic-calc:hover{
+    background-color: rgb(54, 53, 53);
+}
+.historic-calc span{
+    margin: 3px 0;
+}
+.historic-calc .calc-visor-1{
+    color: rgb(160, 160, 160);
+    letter-spacing: .7rem;
+    font-size: .8rem;
+}
+.historic-calc .calc-visor-2{
+    font-size: 1.5rem;
+}
+.trash{
+    display: flex;
+    justify-content: end;
+}
+.trash .img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    cursor: pointer;
+}
+.trash .img:hover{
+    background-color: rgba(182, 182, 182, 0.233);
+    border:  solid 1px rgba(255, 255, 255, 0.164);
+}
+.trash img{
+    width: 20px;
+}

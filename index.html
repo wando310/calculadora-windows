@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Calculator Windows</title>
+</head>
+
+<body>
+
+    <div class="container-principal">
+        <!-- Modal -->
+        <aside class="modal">
+            <div class="modal-container">
+                <h2>Calculadora</h2>
+                <ul>
+                    <li>
+                        <img src="imege/image menu/calculadora.png" alt="alt">
+                        <span>Padrão</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/frasco.png" alt="alt">
+                        <span>Cientifica</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/grafico.png" alt="alt">
+                        <span>Representação gráfica</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/programa.png" alt="alt">
+                        <span>Programador</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/calendario.png" alt="alt">
+                        <span>Cálculo de Data</span>
+                    </li>
+                </ul>
+                <h2>Conversor</h2>
+                <ul>
+                    <li>
+                        <img src="imege/image menu/moedas.png" alt="alt">
+                        <span>Moeda</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/cubo.png" alt="alt">
+                        <span>Volume</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/governante.png" alt="alt">
+                        <span>Comprimento</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/quilograma.png" alt="alt">
+                        <span>Peso e massa</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/temperatura-alta.png" alt="alt">
+                        <span>Temperatura</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/fire.png" alt="alt">
+                        <span>Energia</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/area.png" alt="alt">
+                        <span>Área</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/rapidez.png" alt="alt">
+                        <span>Velocidade</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/relogio.png" alt="alt">
+                        <span>Tempo</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/raio.png" alt="alt">
+                        <span>Potência</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/dados.png" alt="alt">
+                        <span>Dados</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/medidor.png" alt="alt">
+                        <span>Pressão</span>
+                    </li>
+                    <li>
+                        <img src="imege/image menu/angulo.png" alt="alt">
+                        <span>Ângulo</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sobre">
+                <img src="imege/image menu/sobre.png" alt="alt">
+                <span>Sobre</span>
+            </div>
+        </aside>
+        <header class="header">
+            <div class="header-title">
+                <span>Calculadora</span>
+            </div>
+            <div class="header-menu">
+                <span class="material-symbols-outlined">remove</span>
+                <span class="material-symbols-outlined">check_box_outline_blank</span>
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </header>
+        <div class="menu-default">
+            <div class="menu-left">
+                <span class="material-symbols-outlined menu">menu</span>
+                <h2>Padrão</h2>
+                <span class="material-symbols-outlined menu-hidden">open_in_new</span>
+            </div>
+            <span class="material-symbols-outlined history">history</span>
+            <span class="material-symbols-outlined close-hidden">close</span>
+        </div>
+        <div class="container-visor">
+            <input class="visor-1" disabled type="text" value="">
+            <input class="visor-2" disabled type="text" value="0">
+        </div>
+        <div class="menu-function">
+            <ul>
+                <li>MC</li>
+                <li>MR</li>
+                <li>M<sub>+</sub></li>
+                <li>M<sub>-</sub></li>
+                <li>MS</li>
+                <li>M<sup>-</sup></li>
+            </ul>
+        </div>
+        <div class="keyboard">
+            <div onclick="percent()" data-="%" class="black-opaco">%</div>
+            <div data-="CE" class="black-opaco">CE</div>
+            <div onclick="clearInput()" class="black-opaco">C</div>
+            <div onclick="del()" data-="del" class="black-opaco">
+                <img src="imege/botao-de-deletar.png" alt="alt">
+            </div>
+            <div onclick="div_4_1()" data-="1/x" class="black-opaco">
+                <sup>1</sup>
+                /
+                <sub>x</sub>
+            </div>
+            <div onclick="square()" data-="x2" class="black-opaco">
+                x <sup>2</sup>
+            </div>
+            <div onclick="source()" data-="raiz" class="black-opaco">
+                <img src="imege/matematica (1).png" alt="raiz">
+            </div>
+            <div onclick="select('/')" data-="/" class="black-opaco">
+                <img src="imege/dividir.png" alt="divid">
+            </div>
+            <div data-="7" class="btn black">7</div>
+            <div data-="8" class="btn black">8</div>
+            <div data-="9" class="btn black">9</div>
+            <div onclick="select('x')" data-="X" class="black-opaco">X</div>
+            <div data-="4" class="btn black">4</div>
+            <div data-="5" class="btn black">5</div>
+            <div data-="6" class="btn black">6</div>
+            <div onclick="select('-')" data-="-" class="black-opaco">
+                <img src="imege/menos_sinal.png" alt="minus">
+            </div>
+            <div data-="1" class="btn black">1</div>
+            <div data-="2" class="btn black">2</div>
+            <div data-="3" class="btn black">3</div>
+            <div onclick="select('+')" data-="+" class="black-opaco" style="font-size: 2rem;">+</div>
+            <div data-="+/-" class="black">
+                <sup>+</sup>
+                /
+                <sub>-</sub>
+            </div>
+            <div data-="0" class="btn black">0</div>
+            <div data-="," class="black">,</div>
+            <div onclick="result()" data-="=" class="" style="background-color: #21576c; font-size: 2rem;">=</div>
+        </div>
+
+        <div class="modal-historic-container">
+            <span class="emputy-value">
+                Ainda não há Hitórico
+            </span>
+            <div class="modal-historic">
+                <!--
+                <div class="historic-calc">
+                    <span class="calc-visor-1">3x3=</span>
+                    <span class="calc-visor-2">9</span>
+                </div>
+                -->
+            </div>
+            <div class="trash">
+                <div class="img">
+                    <img src="imege/image menu/trash.png" alt="img-trash">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
